@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fran Nunes | Terapias Holísticas & Consciência</title>
+  <meta name="description" content="Terapeuta holística e professora. Liberte travas emocionais, cure padrões herdados e expanda sua versão verdadeira no mundo.">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <!-- NAVIGATION -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <span class="logo-circle">F</span>
+        <div class="logo-text">
+          <span class="logo-name">Fran Nunes</span>
+          <span class="logo-subtitle">Terapias Holísticas</span>
+        </div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#jornada">Jornadas</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#cadastro">Cadastro</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="#admin" class="btn-admin">Área da Terapeuta</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger">☰</button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-tagline">✦ Terapias Holísticas & Consciência ✦</p>
+      <h1>Te conduzo de volta<br><em>à tua verdade</em></h1>
+      <p class="hero-desc">Liberte travas emocionais, cure padrões herdados e expanda sua versão verdadeira no mundo.</p>
+      <div class="hero-btns">
+        <a href="#servicos" class="btn-primary">Conhecer Terapias</a>
+        <a href="https://wa.me/5500000000000" class="btn-whatsapp" target="_blank">💬 WhatsApp</a>
+      </div>
+    </div>
+    <div class="hero-scroll">↓</div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="sobre">
+    <div class="container">
+      <div class="sobre-grid">
+        <div class="sobre-img">
+          <div class="img-placeholder">
+            <span>Foto de Fran Nunes</span>
+          </div>
+          <div class="sobre-badge">
+            <span>✦</span>
+            <p>Terapeuta & Professora</p>
+          </div>
+        </div>
+        <div class="sobre-texto">
+          <p class="section-label">Prazer, eu sou</p>
+          <h2>Fran Nunes</h2>
+          <p>Terapeuta holística e professora. Minhas terapias unem energia, espiritualidade e consciência para liberar travas emocionais, padrões herdados, dores antigas e sobrecargas que já não te pertencem.</p>
+          <p>Aqui, você encontra um espaço seguro e profundo, onde o sentir é honrado, o ritmo é respeitado e a cura acontece de dentro para fora.</p>
+          <div class="sobre-pilares">
+            <div class="pilar">
+              <span>🌿</span>
+              <p>Energia & Espiritualidade</p>
+            </div>
+            <div class="pilar">
+              <span>💫</span>
+              <p>Consciência & Expansão</p>
+            </div>
+            <div class="pilar">
+              <span>🔥</span>
+              <p>Cura & Transformação</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section id="servicos" class="servicos">
+    <div class="container">
+      <p class="section-label center">O que ofereço</p>
+      <h2 class="center">Terapias & Serviços</h2>
+      <div class="servicos-grid">
+        <div class="servico-card">
+          <div class="servico-icon">🌿</div>
+          <h3>Atendimento Individual</h3>
+          <p>Sessão terapêutica profunda e personalizada para liberação de traumas, crenças e padrões inconscientes.</p>
+          <a href="https://wa.me/5500000000000" class="btn-card">Agendar →</a>
+        </div>
+        <div class="servico-card destaque">
+          <div class="servico-icon">👑</div>
+          <h3>Jornada da Imperatriz</h3>
+          <p>Jornada transformadora de reconexão com sua força feminina, poder pessoal e soberania interior.</p>
+          <a href="#jornada" class="btn-card">Saiba Mais →</a>
+        </div>
+        <div class="servico-card">
+          <div class="servico-icon">⚡</div>
+          <h3>Oficina: Impere-se</h3>
+          <p>Vivência em grupo para fortalecer, proteger e alinhar sua energia em um espaço de expansão coletiva.</p>
+          <a href="https://wa.me/5500000000000" class="btn-card">Participar →</a>
+        </div>
+        <div class="servico-card">
+          <div class="servico-icon">🛡️</div>
+          <h3>Guardião da Própria Energia</h3>
+          <p>Aprenda técnicas energéticas e espirituais para fortalecimento, proteção e alinhamento da sua aura.</p>
+          <a href="https://wa.me/5500000000000" class="btn-card">Saber Mais →</a>
+        </div>
+        <div class="servico-card">
+          <div class="servico-icon">🔮</div>
+          <h3>Rituais & Vivências</h3>
+          <p>Encontros, rituais e vivências de cura e expansão para aprofundar sua jornada espiritual.</p>
+          <a href="https://wa.me/5500000000000" class="btn-card">Descobrir →</a>
+        </div>
+        <div class="servico-card">
+          <div class="servico-icon">📚</div>
+          <h3>Conteúdos & Formação</h3>
+          <p>Conteúdos que despertam consciência, poder pessoal e prosperidade para sua jornada de expansão.</p>
+          <a href="https://wa.me/5500000000000" class="btn-card">Acessar →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JORNADA DA IMPERATRIZ -->
+  <section id="jornada" class="jornada">
+    <div class="container">
+      <div class="jornada-content">
+        <p class="section-label">Programa Especial</p>
+        <h2>Jornada da Imperatriz 👑</h2>
+        <p class="jornada-desc">Uma jornada terapêutica profunda para mulheres que desejam reconectar com sua força, clareza e soberania interior.</p>
+        <ul class="jornada-lista">
+          <li>✦ Liberação de padrões de submissão e autossabotagem</li>
+          <li>✦ Reconexão com sua essência e poder feminino</li>
+          <li>✦ Construção de limites saudáveis e autoconhecimento</li>
+          <li>✦ Rituais, práticas energéticas e vivências de grupo</li>
+          <li>✦ Suporte individualizado durante toda a jornada</li>
+        </ul>
+        <a href="https://wa.me/5500000000000" class="btn-primary">Quero Participar</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISSÃO -->
+  <section class="missao">
+    <div class="container">
+      <div class="missao-box">
+        <p class="section-label center">Minha Missão</p>
+        <blockquote>"Te guiar para sair do ciclo de sobrecarga, autossabotagem e desconexão. Te ajudar a recuperar o seu centro, assumir a sua potência e viver com mais presença, verdade e autonomia de consciência."</blockquote>
+        <p class="missao-autor">— Fran Nunes</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section id="depoimentos" class="depoimentos">
+    <div class="container">
+      <p class="section-label center">Resultados Reais</p>
+      <h2 class="center">O que dizem as clientes</h2>
+      <div class="depoimentos-grid">
+        <div class="depoimento-card">
+          <div class="estrelas">★★★★★</div>
+          <p>"A Fran tem um dom único de criar um espaço seguro onde a cura realmente acontece. Transformei minha relação comigo mesma."</p>
+          <div class="depoimento-autor">
+            <div class="avatar">M</div>
+            <span>Maria S.</span>
+          </div>
+        </div>
+        <div class="depoimento-card">
+          <div class="estrelas">★★★★★</div>
+          <p>"Após as sessões com a Fran, consegui me libertar de padrões que me prendiam há anos. Recomendo de coração para todas!"</p>
+          <div class="depoimento-autor">
+            <div class="avatar">A</div>
+            <span>Ana P.</span>
+          </div>
+        </div>
+        <div class="depoimento-card">
+          <div class="estrelas">★★★★★</div>
+          <p>"A Jornada da Imperatriz mudou completamente minha perspectiva. Me sinto mais inteira, forte e conectada comigo mesma."</p>
+          <div class="depoimento-autor">
+            <div class="avatar">C</div>
+            <span>Carla T.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CADASTRO DE CLIENTE -->
+  <section id="cadastro" class="cadastro">
+    <div class="container">
+      <p class="section-label center">Dê o Primeiro Passo</p>
+      <h2 class="center">Quero Iniciar Minha Jornada</h2>
+      <p class="center cadastro-desc">Preencha o formulário abaixo para que eu possa conhecer melhor sua história e como posso te ajudar.</p>
+      <form id="briefing-form" class="briefing-form">
+        <div class="form-section">
+          <h3>📋 Informações Pessoais</h3>
+          <div class="form-grid">
+            <div class="form-group">
+              <label>Nome Completo *</label>
+              <input type="text" name="nome" required placeholder="Seu nome completo">
+            </div>
+            <div class="form-group">
+              <label>Data de Nascimento *</label>
+              <input type="date" name="data_nascimento" required>
+            </div>
+            <div class="form-group">
+              <label>Email *</label>
+              <input type="email" name="email" required placeholder="seu@email.com">
+            </div>
+            <div class="form-group">
+              <label>WhatsApp *</label>
+              <input type="tel" name="whatsapp" required placeholder="(00) 00000-0000">
+            </div>
+            <div class="form-group">
+              <label>Cidade / Estado *</label>
+              <input type="text" name="cidade" required placeholder="Sua cidade">
+            </div>
+            <div class="form-group">
+              <label>Profissão</label>
+              <input type="text" name="profissao" placeholder="Sua profissão">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <h3>🌿 Sobre Sua Jornada</h3>
+          <div class="form-group full">
+            <label>O que te trouxe até aqui? O que você está vivendo agora? *</label>
+            <textarea name="motivo" required rows="4" placeholder="Descreva o que motivou você a buscar terapia..."></textarea>
+          </div>
+          <div class="form-group full">
+            <label>Quais são suas principais dores ou desafios no momento? *</label>
+            <textarea name="dores" required rows="4" placeholder="Relate suas dores, medos ou desafios..."></textarea>
+          </div>
+          <div class="form-group full">
+            <label>O que você sonha em transformar/conquistar com o processo terapêutico?</label>
+            <textarea name="sonhos" rows="4" placeholder="Descreva seus objetivos e sonhos..."></textarea>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <h3>💫 Histórico & Saúde</h3>
+          <div class="form-grid">
+            <div class="form-group full">
+              <label>Já fez algum processo terapêutico anterior? Qual?</label>
+              <textarea name="historico_terapeutico" rows="3" placeholder="Descreva experiências anteriores..."></textarea>
+            </div>
+            <div class="form-group full">
+              <label>Você faz uso de algum medicamento contínuo ou tem alguma condição de saúde relevante?</label>
+              <textarea name="saude" rows="3" placeholder="Informações de saúde relevantes..."></textarea>
+            </div>
+            <div class="form-group">
+              <label>Como você se relaciona com espiritualidade?</label>
+              <select name="espiritualidade">
+                <option value="">Selecione...</option>
+                <option value="muito conectada">Muito conectada</option>
+                <option value="em desenvolvimento">Em desenvolvimento</option>
+                <option value="iniciante">Iniciante / curiosa</option>
+                <option value="nao pratico">Não pratico</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Como ficou sabendo sobre o meu trabalho?</label>
+              <select name="origem">
+                <option value="">Selecione...</option>
+                <option value="instagram">Instagram</option>
+                <option value="indicacao">Indicação</option>
+                <option value="google">Google</option>
+                <option value="facebook">Facebook</option>
+                <option value="outro">Outro</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <h3>🎯 Serviço de Interesse</h3>
+          <div class="form-group full">
+            <label>Qual serviço te interessa? *</label>
+            <div class="checkbox-group">
+              <label class="checkbox-label"><input type="checkbox" name="servico" value="individual"> Atendimento Individual</label>
+              <label class="checkbox-label"><input type="checkbox" name="servico" value="jornada"> Jornada da Imperatriz</label>
+              <label class="checkbox-label"><input type="checkbox" name="servico" value="impere"> Oficina Impere-se</label>
+              <label class="checkbox-label"><input type="checkbox" name="servico" value="guardiao"> Guardião da Própria Energia</label>
+              <label class="checkbox-label"><input type="checkbox" name="servico" value="ritual"> Rituais & Vivências</label>
+            </div>
+          </div>
+          <div class="form-group full">
+            <label>Há alguma coisa mais que gostaria de compartilhar antes da nossa conversa?</label>
+            <textarea name="observacoes" rows="4" placeholder="Qualquer informação adicional que considere importante..."></textarea>
+          </div>
+        </div>
+
+        <div class="form-consent">
+          <label class="checkbox-label">
+            <input type="checkbox" name="lgpd" required>
+            Concordo com o tratamento dos meus dados pessoais conforme a LGPD, para fins de atendimento terapêutico pela Fran Nunes.
+          </label>
+        </div>
+
+        <button type="submit" class="btn-submit">✨ Enviar Meu Cadastro</button>
+        <div id="form-feedback" class="form-feedback"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="contato">
+    <div class="container">
+      <div class="contato-grid">
+        <div class="contato-info">
+          <p class="section-label">Vamos Conversar</p>
+          <h2>Entre em Contato</h2>
+          <div class="contato-items">
+            <a href="https://wa.me/5500000000000" class="contato-item" target="_blank">
+              <span class="contato-icon">💬</span>
+              <div>
+                <strong>WhatsApp</strong>
+                <p>Clique para conversar</p>
+              </div>
+            </a>
+            <a href="https://instagram.com/frannunesterap" class="contato-item" target="_blank">
+              <span class="contato-icon">📸</span>
+              <div>
+                <strong>Instagram</strong>
+                <p>@frannunesterap</p>
+              </div>
+            </a>
+            <a href="https://facebook.com" class="contato-item" target="_blank">
+              <span class="contato-icon">👥</span>
+              <div>
+                <strong>Facebook</strong>
+                <p>Fran Nunes Terapias</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="contato-msg">
+          <blockquote class="frase-final">"Seja bem-vinda. A sua jornada de volta para si começa aqui."</blockquote>
+          <a href="#cadastro" class="btn-primary">Iniciar Jornada ✦</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ADMIN LOGIN -->
+  <section id="admin" class="admin-section">
+    <div class="container">
+      <div id="admin-login-box" class="admin-login-box">
+        <div class="admin-logo">🌿</div>
+        <h2>Área da Terapeuta</h2>
+        <p>Acesso exclusivo para Fran Nunes</p>
+        <form id="login-form">
+          <div class="form-group">
+            <label>Usuário</label>
+            <input type="text" id="admin-user" placeholder="Usuário" autocomplete="username">
+          </div>
+          <div class="form-group">
+            <label>Senha</label>
+            <input type="password" id="admin-pass" placeholder="Senha" autocomplete="current-password">
+          </div>
+          <button type="submit" class="btn-submit">Entrar →</button>
+          <div id="login-feedback" class="form-feedback"></div>
+        </form>
+      </div>
+
+      <!-- DASHBOARD (hidden until logged in) -->
+      <div id="admin-dashboard" class="admin-dashboard hidden">
+        <div class="dashboard-header">
+          <h2>🌿 Dashboard — Fran Nunes</h2>
+          <button id="logout-btn" class="btn-logout">Sair</button>
+        </div>
+
+        <!-- TABS -->
+        <div class="dashboard-tabs">
+          <button class="dash-tab active" data-tab="kpis">📊 KPIs</button>
+          <button class="dash-tab" data-tab="clientes">👥 Clientes</button>
+          <button class="dash-tab" data-tab="pagamentos">💰 Pagamentos</button>
+          <button class="dash-tab" data-tab="relatorios">📄 Relatórios</button>
+        </div>
+
+        <!-- KPIs TAB -->
+        <div id="tab-kpis" class="tab-content active">
+          <h3>Painel de KPIs Estratégicos</h3>
+          <div class="kpi-cards">
+            <div class="kpi-card">
+              <span class="kpi-icon">👥</span>
+              <div class="kpi-info">
+                <span class="kpi-value" id="kpi-total-clientes">0</span>
+                <span class="kpi-label">Total de Clientes</span>
+              </div>
+            </div>
+            <div class="kpi-card">
+              <span class="kpi-icon">✅</span>
+              <div class="kpi-info">
+                <span class="kpi-value" id="kpi-ativos">0</span>
+                <span class="kpi-label">Clientes Ativos</span>
+              </div>
+            </div>
+            <div class="kpi-card">
+              <span class="kpi-icon">💰</span>
+              <div class="kpi-info">
+                <span class="kpi-value" id="kpi-receita">R$ 0</span>
+                <span class="kpi-label">Receita do Mês</span>
+              </div>
+            </div>
+            <div class="kpi-card">
+              <span class="kpi-icon">📋</span>
+              <div class="kpi-info">
+                <span class="kpi-value" id="kpi-sessoes">0</span>
+                <span class="kpi-label">Sessões no Mês</span>
+              </div>
+            </div>
+            <div class="kpi-card">
+              <span class="kpi-icon">🌟</span>
+              <div class="kpi-info">
+                <span class="kpi-value" id="kpi-novos">0</span>
+                <span class="kpi-label">Novos este Mês</span>
+              </div>
+            </div>
+            <div class="kpi-card">
+              <span class="kpi-icon">🔄</span>
+              <div class="kpi-info">
+                <span class="kpi-value" id="kpi-retencao">0%</span>
+                <span class="kpi-label">Taxa de Retenção</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="charts-grid">
+            <div class="chart-box">
+              <h4>Receita Mensal (6 meses)</h4>
+              <canvas id="chart-receita"></canvas>
+            </div>
+            <div class="chart-box">
+              <h4>Clientes por Serviço</h4>
+              <canvas id="chart-servicos"></canvas>
+            </div>
+          </div>
+
+          <div class="metas-plano">
+            <h4>📍 Plano de Ação — Ciclo Atual</h4>
+            <div class="metas-grid">
+              <div class="meta-item">
+                <label>Meta de Receita Mensal</label>
+                <div class="meta-progress">
+                  <div class="progress-bar" id="progress-receita" style="width: 0%"></div>
+                </div>
+                <span class="meta-valor" id="meta-receita-pct">0% da meta</span>
+              </div>
+              <div class="meta-item">
+                <label>Meta de Novos Clientes/Mês</label>
+                <div class="meta-progress">
+                  <div class="progress-bar" id="progress-clientes" style="width: 0%"></div>
+                </div>
+                <span class="meta-valor" id="meta-clientes-pct">0% da meta</span>
+              </div>
+              <div class="meta-item">
+                <label>Meta de Sessões/Mês</label>
+                <div class="meta-progress">
+                  <div class="progress-bar" id="progress-sessoes" style="width: 0%"></div>
+                </div>
+                <span class="meta-valor" id="meta-sessoes-pct">0% da meta</span>
+              </div>
+            </div>
+
+            <div class="kpi-semanal">
+              <h4>📋 KPIs Semanais (Plano Estratégico)</h4>
+              <div class="semanal-grid">
+                <div class="semanal-item">
+                  <label>Contatos novos respondidos</label>
+                  <input type="number" class="kpi-input" data-kpi="contatos" min="0">
+                </div>
+                <div class="semanal-item">
+                  <label>Stories/Posts publicados</label>
+                  <input type="number" class="kpi-input" data-kpi="posts" min="0">
+                </div>
+                <div class="semanal-item">
+                  <label>Sessões realizadas</label>
+                  <input type="number" class="kpi-input" data-kpi="sessoes_sem" min="0">
+                </div>
+                <div class="semanal-item">
+                  <label>Depoimentos coletados</label>
+                  <input type="number" class="kpi-input" data-kpi="depoimentos" min="0">
+                </div>
+                <div class="semanal-item">
+                  <label>Indicações recebidas</label>
+                  <input type="number" class="kpi-input" data-kpi="indicacoes" min="0">
+                </div>
+              </div>
+              <button class="btn-primary" id="salvar-kpis">Salvar KPIs da Semana</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- CLIENTES TAB -->
+        <div id="tab-clientes" class="tab-content hidden">
+          <div class="clientes-header">
+            <h3>Gestão de Clientes</h3>
+            <input type="text" id="busca-cliente" placeholder="🔍 Buscar cliente..." class="search-input">
+          </div>
+          <div id="lista-clientes" class="lista-clientes">
+            <p class="loading-msg">Carregando clientes...</p>
+          </div>
+
+          <!-- Modal de Cliente -->
+          <div id="modal-cliente" class="modal hidden">
+            <div class="modal-content">
+              <button class="modal-close" id="modal-close">✕</button>
+              <h3 id="modal-nome-cliente">Cliente</h3>
+              <div class="modal-tabs">
+                <button class="modal-tab active" data-mtab="briefing">📋 Briefing</button>
+                <button class="modal-tab" data-mtab="evolucao">📈 Evolução</button>
+                <button class="modal-tab" data-mtab="sessoes">🗓️ Sessões</button>
+              </div>
+
+              <div id="mtab-briefing" class="modal-tab-content active">
+                <div id="briefing-detalhes"></div>
+              </div>
+
+              <div id="mtab-evolucao" class="modal-tab-content hidden">
+                <div class="evolucao-form">
+                  <h4>Registrar Evolução</h4>
+                  <textarea id="nova-evolucao" rows="4" placeholder="Registre a evolução do cliente nesta sessão..."></textarea>
+                  <button class="btn-primary" id="salvar-evolucao">Salvar Registro</button>
+                </div>
+                <div id="historico-evolucao"></div>
+              </div>
+
+              <div id="mtab-sessoes" class="modal-tab-content hidden">
+                <div class="sessao-form">
+                  <h4>Registrar Sessão</h4>
+                  <div class="form-grid">
+                    <div class="form-group">
+                      <label>Data</label>
+                      <input type="date" id="sessao-data">
+                    </div>
+                    <div class="form-group">
+                      <label>Tipo</label>
+                      <select id="sessao-tipo">
+                        <option value="individual">Individual</option>
+                        <option value="grupo">Grupo</option>
+                        <option value="online">Online</option>
+                      </select>
+                    </div>
+                    <div class="form-group full">
+                      <label>Observações</label>
+                      <textarea id="sessao-obs" rows="3"></textarea>
+                    </div>
+                  </div>
+                  <button class="btn-primary" id="salvar-sessao">Salvar Sessão</button>
+                </div>
+                <div id="historico-sessoes"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PAGAMENTOS TAB -->
+        <div id="tab-pagamentos" class="tab-content hidden">
+          <div class="pagamentos-header">
+            <h3>Controle de Pagamentos</h3>
+            <button class="btn-primary" id="novo-pagamento">+ Novo Pagamento</button>
+          </div>
+
+          <div id="form-pagamento" class="form-pagamento hidden">
+            <div class="form-grid">
+              <div class="form-group">
+                <label>Cliente</label>
+                <select id="pag-cliente"></select>
+              </div>
+              <div class="form-group">
+                <label>Serviço</label>
+                <input type="text" id="pag-servico" placeholder="Ex: Atendimento Individual">
+              </div>
+              <div class="form-group">
+                <label>Valor (R$)</label>
+                <input type="number" id="pag-valor" step="0.01" placeholder="0,00">
+              </div>
+              <div class="form-group">
+                <label>Data</label>
+                <input type="date" id="pag-data">
+              </div>
+              <div class="form-group">
+                <label>Status</label>
+                <select id="pag-status">
+                  <option value="pago">Pago</option>
+                  <option value="pendente">Pendente</option>
+                  <option value="parcelado">Parcelado</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Método</label>
+                <select id="pag-metodo">
+                  <option value="pix">PIX</option>
+                  <option value="cartao">Cartão</option>
+                  <option value="transferencia">Transferência</option>
+                  <option value="dinheiro">Dinheiro</option>
+                </select>
+              </div>
+            </div>
+            <button class="btn-primary" id="salvar-pagamento">Salvar Pagamento</button>
+          </div>
+
+          <table class="tabela-pagamentos">
+            <thead>
+              <tr>
+                <th>Cliente</th>
+                <th>Serviço</th>
+                <th>Valor</th>
+                <th>Data</th>
+                <th>Status</th>
+                <th>Método</th>
+              </tr>
+            </thead>
+            <tbody id="tabela-pag-body">
+              <tr><td colspan="6" class="loading-msg">Carregando pagamentos...</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- RELATÓRIOS TAB -->
+        <div id="tab-relatorios" class="tab-content hidden">
+          <h3>Relatórios Estratégicos</h3>
+          <div class="relatorios-grid">
+            <div class="relatorio-card">
+              <h4>📊 Relatório Mensal</h4>
+              <p>Resumo completo de clientes, sessões e receita do mês selecionado.</p>
+              <div class="form-group">
+                <input type="month" id="rel-mes">
+              </div>
+              <button class="btn-primary" id="gerar-relatorio-mensal">Gerar Relatório</button>
+            </div>
+            <div class="relatorio-card">
+              <h4>💰 Relatório Financeiro</h4>
+              <p>Análise de receitas, pagamentos pendentes e projeções.</p>
+              <button class="btn-primary" id="gerar-relatorio-financeiro">Gerar Relatório</button>
+            </div>
+            <div class="relatorio-card">
+              <h4>📈 Relatório de Evolução</h4>
+              <p>Acompanhamento da evolução dos clientes por período.</p>
+              <button class="btn-primary" id="gerar-relatorio-evolucao">Gerar Relatório</button>
+            </div>
+          </div>
+          <div id="relatorio-output" class="relatorio-output hidden"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <span class="logo-circle">F</span>
+            <div class="logo-text">
+              <span class="logo-name">Fran Nunes</span>
+              <span class="logo-subtitle">Terapias Holísticas</span>
+            </div>
+          </div>
+          <p>Terapias holísticas para a sua transformação interior.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#cadastro">Cadastro</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h4>Redes Sociais</h4>
+          <a href="https://instagram.com/frannunesterap" target="_blank">Instagram</a>
+          <a href="https://wa.me/5500000000000" target="_blank">WhatsApp</a>
+          <a href="https://facebook.com" target="_blank">Facebook</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Fran Nunes. Todos os direitos reservados.</p>
+        <p>Desenvolvido com 💛 por sua equipe estratégica.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+    </html>
